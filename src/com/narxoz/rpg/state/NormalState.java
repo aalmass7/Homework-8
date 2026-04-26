@@ -22,7 +22,7 @@ public class NormalState implements HeroState{
     @Override
     public void onTurnStart(Hero hero) {
         if (hero.isLowHp()) {
-            System.out.println("   [STATE CHECK] " + hero.getName() + " is below half HP and snaps into Berserk mode.");
+            System.out.println("   [STATE CHECK] " + hero.getName() + " is below half HP and snaps into Gladiator mode.");
             hero.setState(new GladiatorState());
         }
     }
